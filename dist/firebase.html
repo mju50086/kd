@@ -1,0 +1,23 @@
+<html><head><script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script><script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script></head><body><div class="signup"><h2 class="signup-title">Sign up for beta</h2><p id="signup-success" class="text-success"></p><p id="signup-error" class="text-danger"></p><form class="signup-form form-inline" id="signup-form" role="form" onsubmit="return signup(this)"><input class="form-control" name="email" type="email" placeholder="Your email. eg., joe@acme.com" required> <button class="btn btn-success" id="signup-button" type="submit">Join now</button></form></div></body><script>var signupForm = document.getElementById('signup-form');
+    var signupSuccess = document.getElementById('signup-success');
+    var signupError = document.getElementById('signup-error');
+    var signupBtn = document.getElementById('signup-button');
+    var onSignupComplete = function(error) {
+      signupBtn.disabled = false;
+      if (error) {
+        signupError.innerHTML = 'Sorry. Could not signup.';
+      } else {
+        signupSuccess.innerHTML = 'Thanks for signing up!';
+        // hide the form
+        signupForm.style.display = 'none';
+      }
+    };
+    function signup(formObj) {
+        // Store emails to firebase
+        var myFirebaseRef = new Firebase("https://konnected-dynamics.firebaseio.com/signups");
+        myFirebaseRef.push({
+          email: formObj.email.value,
+        }, onSignupComplete);
+        signupBtn.disabled = true;
+        return false;
+    }</script></html>

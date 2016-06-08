@@ -1,0 +1,202 @@
+
+@font-face {
+    font-family: 'lead';
+    src: url('/fonts/lead-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+  	background: url(/images/bunting.jpg) no-repeat center center fixed;
+  	background-size: cover;
+}
+
+p {
+	font-family: 'Fira Sans', sans-serif;
+}
+
+
+.fira700 {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 700;
+	opacity:0.87;
+}
+
+
+.fira400 {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+	opacity:0.87;
+}
+
+
+.fira500 {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 500;
+	opacity:0.87;
+}
+
+.fira400.mdl-card__title-text {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+	opacity:0.87;
+}
+
+
+.fira500.mdl-button {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 500;
+	color: rgb(0,0,0);
+	opacity:0.87;
+
+
+}
+
+
+.fira500.mdl-textfield__label {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 500;
+}
+
+.fira500.mdl-textfield__input {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 700;
+	color:rgb(255,87,34);
+
+}
+
+
+
+.bg img {
+	margin-top: 10px;
+	width: 200px;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+		display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+
+.margin {
+	margin-top: 30px;
+}
+
+.card-wide.mdl-card {
+	width: 462px;
+	max-width: 100%;
+
+}
+
+.card-align-left {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1050px) {
+ .card-align-left {
+	display: block;
+	margin-left: auto;
+    margin-right: 10px;
+}
+  }
+
+.card-align-right {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1050px) {
+ .card-align-right {
+	display: block;
+	margin-left: 10px;
+    margin-right: auto;
+}
+  }
+
+#topcardright {
+	margin-bottom: 100px;
+}
+
+.esp {
+	font-size: 18px;
+	font-family: lead;
+	color: #00a2e2;
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+
+.edimax img {
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+	width: 150px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.adam img {
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+	width: 170px;
+	margin-top: 15px;
+	
+}
+
+.card-orange.mdl-card__actions {
+	background-color: rgb(255,152,0);
+}
+
+.cardlogo img {
+	display: block;
+	margin-left: auto;
+	margin-right: 0;
+	margin-bottom: 2.5px;
+	width: 35px;
+ }
+
+.floatleft {
+	display: block;
+	float: left;
+}
+
+.pattern {
+	background: url(/images/pattern.gif);
+    background-repeat: no-repeat;
+    background-position: left 0px bottom 0px;
+    background-size: 145px;
+  }
+
+.transparent  {
+	opacity: 0.87;
+}
+
+.dot-a {
+	background: url(/images/dot.gif);
+    background-repeat: no-repeat;
+    background-position: left -70px bottom 0px;
+    background-size: 275px;
+  }
+
+  .dot-b {
+	background: url(/images/dot.gif);
+    background-repeat: no-repeat;
+    background-position: right 0px top 0px;
+    background-size: 125px;
+  }
+
+  .phone {
+  	margin-top: 10px;
+  	margin-left: 10px;
+  }
