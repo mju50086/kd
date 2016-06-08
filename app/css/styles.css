@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'lead';
-    src: url('/fonts/lead-webfont.ttf');
+    src: url('../fonts/lead-webfont.ttf');
     font-weight: normal;
     font-style: normal;
 }
