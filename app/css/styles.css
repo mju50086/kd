@@ -8,7 +8,7 @@
 
 
 body {
-  	background: url('images/bunting.jpg') no-repeat center center fixed;
+  	background: url('/images/bunting.jpg') no-repeat center center fixed;
   	background-size: cover;
 }
 
