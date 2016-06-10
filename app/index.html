@@ -130,28 +130,6 @@
 <!--endbuild-->
 <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 
-<script>
-
-var url = "https://konnected-dynamics.firebaseio.com/launch";
-
-var firebaseRef = new Firebase(url);
-
-function funct1(evt)
-{
-  var email = $('#email').val();
-
-  var date = Date();
-
-  firebaseRef.push({Email: email, Date: date});
-  evt.preventDefault();
-}
-
-var submit = document.getElementsByTagName('button')[0];
-
-submit.onclick = funct1;
-
-</script>
-
 <link rel="preload" href="https://code.getmdl.io/1.1.3/material.deep_orange-cyan.min.css" as="style" onload="this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.deep_orange-cyan.min.css"></noscript>
 

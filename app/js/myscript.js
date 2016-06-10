@@ -124,3 +124,22 @@
 
 
 
+
+var url = "https://konnected-dynamics.firebaseio.com/launch";
+
+var firebaseRef = new Firebase(url);
+
+function funct1(evt)
+{
+  var email = $('#email').val();
+
+  var date = Date();
+
+  firebaseRef.push({Email: email, Date: date});
+  evt.preventDefault();
+}
+
+var submit = document.getElementsByTagName('button')[0];
+
+submit.onclick = funct1;
+
