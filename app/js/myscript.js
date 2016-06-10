@@ -135,7 +135,15 @@ function funct1(evt)
 
   var date = Date();
 
-  firebaseRef.push({Email: email, Date: date});
+  firebaseRef.push({Email: email, Date: date}, function(error) {
+  if (error) {
+    alert("Data could not be saved." + error);
+  } else {
+    alert("Data saved successfully.");
+  }
+});
+
+
   evt.preventDefault();
 }
 
