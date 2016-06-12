@@ -37,20 +37,16 @@ p {
 	opacity:0.87;
 }
 
-.fira400.mdl-card__title-text {
-	font-family: 'Fira Sans', sans-serif;
-	font-weight: 400;
-	opacity:0.87;
-}
-
 
 .fira500.mdl-button {
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 500;
-	color: rgb(0,0,0);
+}
+
+.fira400.mdl-card__title-text {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
 	opacity:0.87;
-
-
 }
 
 
@@ -65,7 +61,6 @@ p {
 	color:rgb(255,87,34);
 
 }
-
 
 
 .bg img {
@@ -154,9 +149,7 @@ p {
 	
 }
 
-.card-orange.mdl-card__actions {
-	background-color: rgb(255,152,0);
-}
+
 
 .cardlogo img {
 	display: block;
@@ -171,32 +164,19 @@ p {
 	float: left;
 }
 
-.pattern {
-	background: url(/images/pattern.gif);
-    background-repeat: no-repeat;
-    background-position: left 0px bottom 0px;
-    background-size: 145px;
-  }
 
 .transparent  {
 	opacity: 0.87;
 }
 
-.dot-a {
-	background: url(/images/dot.gif);
-    background-repeat: no-repeat;
-    background-position: left -70px bottom 0px;
-    background-size: 275px;
-  }
-
-  .dot-b {
-	background: url(/images/dot.gif);
-    background-repeat: no-repeat;
-    background-position: right 0px top 0px;
-    background-size: 125px;
-  }
 
   .phone {
   	margin-top: 10px;
   	margin-left: 10px;
   }
+
+.success {
+	float: right;
+	margin-top: 20px;
+	color: #4CAF50;
+}

@@ -135,11 +135,22 @@ function funct1(evt)
 
   var date = Date();
 
+  var $form = $('#contact_form');
+  
+  var $confirm = $('#message');
+
+  var $button = $('#sendButton');
+
+  
+
+
   firebaseRef.push({Email: email, Date: date}, function(error) {
   if (error) {
     alert("Data could not be saved." + error);
   } else {
-    alert("Data saved successfully.");
+  
+    $button.prop('disabled', 'disabled');
+        $confirm.addClass('success').fadeIn().html('<i class="material-icons">done</i>');
   }
 });
 

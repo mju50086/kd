@@ -15,6 +15,7 @@
 
 <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <link rel="preload" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700" as="style" onload="this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700"></noscript>
@@ -77,22 +78,25 @@
   <div class="mdl-card__supporting-text">
   <p>You'll love our upcoming new website. To keep updated, activate your launch notification below:</p>
 
+  
 
-<form>
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <input class="fira500 mdl-textfield__input" name="email" type="email" id="email">
-    <label class="fira500 mdl-textfield__label" for="launch">Your email</label>
+
+<form id="contact_form" autocomplete="off">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" name="email" type="email" id="email" required>
+    <label class="mdl-textfield__label" for="email" required>example@email.com</label>
+
   </div>
+<div id="message"></div>
 
 </div>
  
 <div class="mdl-card__actions mdl-card--border">
 
-   <button class="fira500 mdl-button mdl-js-button mdl-js-ripple-effect floatleft sendBtn" id="sendButton" type="submit">
-      NOTIFY ME!
+   <button class="fira500 green mdl-button mdl-js-button mdl-button--raised mdl-button--colored floatleft" id="sendButton" type="submit">
+      Activate
     </button>
 </form>
-
 
 
 <div class="cardlogo">
